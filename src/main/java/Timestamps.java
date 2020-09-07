@@ -18,8 +18,16 @@ class Timestamps {
         /*
          *  your code goes here
          */
+         int hoursPassed = hours2 - hours1;
+         int minsPassed = minutes2 - minutes1;
+         int secPassed = seconds2 - seconds1;
+         int hoursConvert = hoursPassed * 3600;
+         int minsConvert = minsPassed * 60; 
+         int secConvert = secPassed * 1;
+         int timePassed = hoursConvert + 
+         minsConvert + secConvert;
 
-
+         System.out.println(timePassed + " seconds that have passed.");
         // closing the scanner object
         scanner.close();
     }
