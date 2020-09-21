@@ -12,11 +12,13 @@ class AnalogClock {
         /*
          *  your code goes here
          */
-         int hours = hourHand / 30; 
-         int degGB = hours * 30;
-         int minGB = hourHand - degGB;
-         int minHandGB = (30 - minGB) * 6;
-         System.out.print(minHandGB);
+          int hours = hourHand / 30; 
+          int degGB = hours * 30; 
+          int minGB = hourHand - degGB;
+          int finalDeg = minGB * 2;
+          finalDeg = finalDeg * 6;
+          System.out.print(finalDeg);
+
         // closing the scanner object
         scanner.close();
     }
